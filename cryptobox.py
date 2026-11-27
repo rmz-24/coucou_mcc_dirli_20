@@ -274,9 +274,7 @@ def construire_parser():
 
 def afficher(texte):
     """Affiche un texte sans ajouter de ligne vide s'il finit déjà par un retour à la ligne."""
-    print(texte, end="" if texte.endswith("
-") else "
-")
+    print(texte, end="" if texte.endswith("\n") else "\n")
 
 
 def commande_vigenere(args):
